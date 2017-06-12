@@ -13,8 +13,9 @@ import {
   createNetworkInterface,
 } from 'react-apollo';
 
+const PORT = port = process.env.PORT || 4000;
 
-const networkInterface = createNetworkInterface({ uri: 'http://localhost:4000/graphql' });
+const networkInterface = createNetworkInterface({ uri: `https://dixonserver.herokuapp.com:${PORT}/graphql` });
 
 const client = new ApolloClient({
   networkInterface,
