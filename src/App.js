@@ -15,7 +15,7 @@ import {
 
 
 // const networkInterface = createNetworkInterface({ uri: 'http://localhost:4000/graphql' });
-const networkInterface = createNetworkInterface({ uri: 'https://dixonapp.herokuapp.com/graphql' });
+const networkInterface = createNetworkInterface({ uri: 'https://dixonserver.herokuapp.com/graphql' });
 
 const client = new ApolloClient({
   networkInterface,
