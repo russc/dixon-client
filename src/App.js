@@ -13,7 +13,7 @@ import {
   createNetworkInterface,
 } from 'react-apollo';
 
-const PORT = port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
 const networkInterface = createNetworkInterface({ uri: `https://dixonserver.herokuapp.com:${PORT}/graphql` });
 
